@@ -1,6 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1741300221
+::res://::1741300978
 icon.svg::CompressedTexture2D/CompressedTexture2D::2557093683351699098::1741300192::1741300192::1::::<><><>0<>0<>916a9a72c9640e91fa4e9c328ad73188<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+README.md::TextFile::-1::1741300363::0::1::::<><><>0<>0<><>::
 ::res://Assest/::1741300192
 ::res://Assest/fonts/::1741300192
 PixelOperator8-Bold.ttf::FontFile/FontFile::3547740253820079699::1741300192::1741300192::1::::<><><>0<>0<>5e442bd9834d43b60f128956919b425c<>res://.godot/imported/PixelOperator8-Bold.ttf-b2a6f962447a9b1d09088eb865bb3bca.fontdata::
@@ -74,9 +75,9 @@ coin_.png::CompressedTexture2D/CompressedTexture2D::3916176450995310266::1741300
 eventBlock_.png::CompressedTexture2D/CompressedTexture2D::6062117046543630917::1741300192::1741300192::1::::<><><>0<>0<>69665f24aff5ff25df82538bb9dfd73f<>res://.godot/imported/eventBlock_.png-dcef5f0b63fb7d1be1bf0bc9c43576f0.ctex::
 items_.png::CompressedTexture2D/CompressedTexture2D::8727632773844623597::1741300192::1741300192::1::::<><><>0<>0<>1e9410fab0a207c753c9825ba1747f04<>res://.godot/imported/items_.png-c7c61bd17bb41c89261ca57551013f11.ctex::
 staticObjects_.png::CompressedTexture2D/CompressedTexture2D::6656431491061051449::1741300192::1741300192::1::::<><><>0<>0<>5168c106604c52a4f5593ceb37e10a55<>res://.godot/imported/staticObjects_.png-9e338040bb0feaf74bc84c48bae6a892.ctex::
-::res://Scenes/::1741300192
-area_2d.gd::GDScript::5914025003481394163::1741300192::0::1::::<>Area2D<><>0<>0<><>::
-game.tscn::PackedScene::4289398178383812954::1741300192::0::1::::<><><>0<>0<><>::uid://b2t1v58vdlfht::::res://Scenes/player.tscn<>uid://coir1dufuadd::::res://Assest/sprites/world_tileset.png<>uid://cra02p87vr0b8::::res://Assest/sprites/midground_/spring_.png<>uid://n003fa5lxgnp::::res://Assest/sprites/midground_/summer_.png<>uid://w85ddgnjghi2::::res://Assest/sprites/3 Objects/Fishing_hut.png<>uid://b633q8msgdkw2::::res://Assest/sprites/3 Objects/Water.png<>uid://dequ4l87s8vgh::::res://Assest/sprites/DinoSprites - vita.png<>uid://cwgq1i3537cyt::::res://Assest/sprites/3 Objects/Boat.png<>uid://cqi2elxm554sl::::res://Scenes/area_2d.gd<>uid://dwxqiucqib8po::::res://Assest/fonts/PixelOperator8.ttf
-player.tscn::PackedScene::4322360410368683389::1741300192::0::1::::<><><>0<>0<><>::uid://d3q518ngxp6ni::::res://Scripts/player.gd<>uid://dnfcitrsvdrcd::::res://Assest/sprites/DinoSprites - doux.png
-::res://Scripts/::1741300192
-player.gd::GDScript::9159449411090673830::1741300192::0::1::::<>CharacterBody2D<><>0<>0<><>::
+::res://Scenes/::1741300674
+area_2d.gd::GDScript/GDScript::5914025003481394163::1741300192::0::1::::<>Area2D<><>0<>0<><>::
+game.tscn::PackedScene::4289398178383812954::1741300674::0::1::::<><><>0<>0<><>::uid://b2t1v58vdlfht::::res://Scenes/player.tscn<>uid://coir1dufuadd::::res://Assest/sprites/world_tileset.png<>uid://cra02p87vr0b8::::res://Assest/sprites/midground_/spring_.png<>uid://n003fa5lxgnp::::res://Assest/sprites/midground_/summer_.png<>uid://w85ddgnjghi2::::res://Assest/sprites/3 Objects/Fishing_hut.png<>uid://b633q8msgdkw2::::res://Assest/sprites/3 Objects/Water.png<>uid://dequ4l87s8vgh::::res://Assest/sprites/DinoSprites - vita.png<>uid://cwgq1i3537cyt::::res://Assest/sprites/3 Objects/Boat.png<>uid://cqi2elxm554sl::::res://Scenes/area_2d.gd<>uid://dwxqiucqib8po::::res://Assest/fonts/PixelOperator8.ttf
+player.tscn::PackedScene::4322360410368683389::1741300674::0::1::::<><><>0<>0<><>::uid://d3q518ngxp6ni::::res://Scripts/player.gd<>uid://dnfcitrsvdrcd::::res://Assest/sprites/DinoSprites - doux.png
+::res://Scripts/::1741300891
+player.gd::GDScript::9159449411090673830::1741300891::0::1::::<>CharacterBody2D<><>0<>0<><>::
