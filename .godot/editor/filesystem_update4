@@ -1,6 +1,3 @@
 res://Scenes/game.tscn
-<<<<<<< HEAD
-=======
-res://Scenes/player.tscn
->>>>>>> bc92a634ce138410413004dc473af4890ee7dd07
 res://Scripts/player.gd
+res://Scenes/player.tscn

@@ -49,7 +49,7 @@ func _physics_process(delta):
 	move_and_slide()
 	
 	if nextToBoatGuy and Input.is_action_just_pressed("interact"):
-		print("Sup")
+		print("Sup Bro")
 		#FisherNPC.visible = false
 		
 
