@@ -1,0 +1,82 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1740889831
+icon.svg::CompressedTexture2D::2557093683351699098::1740694269::1740694281::1::::<><>::
+::res://Assest/::1740694706
+::res://Assest/fonts/::1740694706
+PixelOperator8-Bold.ttf::FontFile::3547740253820079699::1740694706::1740694706::1::::<><>::
+PixelOperator8.ttf::FontFile::8751884111989240216::1740694706::1740694706::1::::<><>::
+::res://Assest/music/::1740694706
+time_for_adventure.mp3::AudioStreamMP3::4920158482727660319::1740694706::1740694706::1::::<><>::
+::res://Assest/sounds/::1740694707
+coin.wav::AudioStreamWAV::8038668136059129917::1740694706::1740694707::1::::<><>::
+explosion.wav::AudioStreamWAV::2714170377721998091::1740694706::1740694707::1::::<><>::
+hurt.wav::AudioStreamWAV::8335363398574400519::1740694706::1740694707::1::::<><>::
+jump.wav::AudioStreamWAV::6212476697688357131::1740694706::1740694707::1::::<><>::
+power_up.wav::AudioStreamWAV::5938114395418125997::1740694706::1740694707::1::::<><>::
+tap.wav::AudioStreamWAV::8729855340205945865::1740694706::1740694707::1::::<><>::
+::res://Assest/sprites/::1740889831
+coin.png::CompressedTexture2D::662803058719493337::1740694706::1740694706::1::::<><>::
+DinoSprites - doux.png::CompressedTexture2D::8082175652532161267::1740846320::1740846321::1::::<><>::
+DinoSprites - mort.png::CompressedTexture2D::6063687716912265594::1740846320::1740846321::1::::<><>::
+DinoSprites - tard.png::CompressedTexture2D::6887981090993653624::1740846320::1740846321::1::::<><>::
+DinoSprites - vita.png::CompressedTexture2D::7474314227789666831::1740846320::1740846321::1::::<><>::
+fruit.png::CompressedTexture2D::6065467678992945500::1740694706::1740694706::1::::<><>::
+knight.png::CompressedTexture2D::6231299844028203182::1740694706::1740694706::1::::<><>::
+platforms.png::CompressedTexture2D::3083871316421717474::1740694706::1740694706::1::::<><>::
+slime_green.png::CompressedTexture2D::3169642435816615135::1740694706::1740694706::1::::<><>::
+slime_purple.png::CompressedTexture2D::5009399793634972373::1740694706::1740694706::1::::<><>::
+world_tileset.png::CompressedTexture2D::169796441429109913::1740694706::1740694706::1::::<><>::
+::res://Assest/sprites/3 Objects/::1740889823
+Boat2.png::CompressedTexture2D::5392149722235682852::1740889822::1740889831::1::::<><>::
+Boat.png::CompressedTexture2D::6330400561316129739::1740889822::1740889831::1::::<><>::
+Fish-rod.png::CompressedTexture2D::9103531672549382937::1740889822::1740889831::1::::<><>::
+Fishbarrel1.png::CompressedTexture2D::8055932141553072407::1740889822::1740889831::1::::<><>::
+Fishbarrel2.png::CompressedTexture2D::4104398727030104233::1740889822::1740889831::1::::<><>::
+Fishbarrel3.png::CompressedTexture2D::7984484529649021787::1740889822::1740889831::1::::<><>::
+Fishbarrel4.png::CompressedTexture2D::8648091142910004013::1740889822::1740889831::1::::<><>::
+Fishing_hut.png::CompressedTexture2D::1614106060527202343::1740889822::1740889831::1::::<><>::
+Grass1.png::CompressedTexture2D::3883751782226996268::1740889822::1740889831::1::::<><>::
+Grass2.png::CompressedTexture2D::7251526953014823720::1740889822::1740889831::1::::<><>::
+Grass3.png::CompressedTexture2D::4581079340462227698::1740889822::1740889831::1::::<><>::
+Grass4.png::CompressedTexture2D::7701924762718846706::1740889822::1740889831::1::::<><>::
+Pier_Tiles.png::CompressedTexture2D::2288958598464962389::1740889822::1740889831::1::::<><>::
+Stay.png::CompressedTexture2D::3738276021913237368::1740889823::1740889831::1::::<><>::
+Water.png::CompressedTexture2D::4621807814719911655::1740889823::1740889831::1::::<><>::
+::res://Assest/sprites/3 Objects/Catch/::1740889823
+1.png::CompressedTexture2D::5436677840461577446::1740889822::1740889832::1::::<><>::
+2.png::CompressedTexture2D::1216165445109401752::1740889822::1740889832::1::::<><>::
+3.png::CompressedTexture2D::8061206120098241844::1740889822::1740889832::1::::<><>::
+4.png::CompressedTexture2D::8560396167535652585::1740889822::1740889832::1::::<><>::
+5.png::CompressedTexture2D::8566106273400384946::1740889822::1740889832::1::::<><>::
+6.png::CompressedTexture2D::7748567376333090250::1740889822::1740889832::1::::<><>::
+7.png::CompressedTexture2D::2951780839593015954::1740889822::1740889831::1::::<><>::
+8.png::CompressedTexture2D::263993185461235567::1740889822::1740889832::1::::<><>::
+Barrel.png::CompressedTexture2D::4207682255157416422::1740889822::1740889831::1::::<><>::
+Box.png::CompressedTexture2D::3980807177505262427::1740889822::1740889831::1::::<><>::
+Chest.png::CompressedTexture2D::7759014718785916922::1740889822::1740889831::1::::<><>::
+::res://Assest/sprites/background_/::1740875934
+desertDungeon_.png::CompressedTexture2D::8563498939069592275::1740875934::1740875934::1::::<><>::
+dungeon_.png::CompressedTexture2D::3163547964179109079::1740875934::1740875934::1::::<><>::
+sky_.png::CompressedTexture2D::185689860656124131::1740875934::1740875934::1::::<><>::
+terrain_.png::CompressedTexture2D::3727742336743036834::1740875934::1740875934::1::::<><>::
+::res://Assest/sprites/foreground_/::1740875934
+foreground_.png::CompressedTexture2D::5397817333191887384::1740875934::1740875934::1::::<><>::
+::res://Assest/sprites/midground_/::1740889831
+autumn_.png::CompressedTexture2D::6597588987796077895::1740875934::1740875934::1::::<><>::
+blackout_.png::CompressedTexture2D::6939861237978546634::1740875934::1740875934::1::::<><>::
+desertDungeon_.png::CompressedTexture2D::7393402864323481692::1740875934::1740875934::1::::<><>::
+dungeon_.png::CompressedTexture2D::4863482744764071341::1740875934::1740875934::1::::<><>::
+spring_.png::CompressedTexture2D::5967618690798838079::1740875934::1740875934::1::::<><>::
+summer_.png::CompressedTexture2D::965632602189838601::1740875934::1740875934::1::::<><>::
+winter_.png::CompressedTexture2D::4101395793129898431::1740875934::1740875934::1::::<><>::
+::res://Assest/sprites/objects_/::1740875934
+beehives_.png::CompressedTexture2D::4522728807499938158::1740875934::1740875934::1::::<><>::
+coin_.png::CompressedTexture2D::3916176450995310266::1740875934::1740875934::1::::<><>::
+eventBlock_.png::CompressedTexture2D::6062117046543630917::1740875934::1740875934::1::::<><>::
+items_.png::CompressedTexture2D::8727632773844623597::1740875934::1740875934::1::::<><>::
+staticObjects_.png::CompressedTexture2D::6656431491061051449::1740875934::1740875934::1::::<><>::
+::res://Scenes/::1740889762
+game.tscn::PackedScene::4289398178383812954::1740889762::0::1::::<><>::uid://b2t1v58vdlfht::::res://Scenes/player.tscn<>uid://coir1dufuadd::::res://Assest/sprites/world_tileset.png<>uid://cra02p87vr0b8::::res://Assest/sprites/midground_/spring_.png
+player.tscn::PackedScene::4322360410368683389::1740889762::0::1::::<><>::res://Scripts/player.gd<>uid://dnfcitrsvdrcd::::res://Assest/sprites/DinoSprites - doux.png
+::res://Scripts/::1740849320
+player.gd::GDScript::-1::1740849320::0::1::::<>CharacterBody2D<>::

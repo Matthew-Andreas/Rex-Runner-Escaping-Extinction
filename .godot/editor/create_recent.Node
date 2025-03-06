@@ -1,0 +1,14 @@
+CollisionShape2D
+Area2D
+StaticBody2D
+Label
+AnimationPlayer
+AnimatableBody2D
+AnimatedSprite2D
+RichTextLabel
+TextEdit
+CollisionPolygon2D
+RigidBody2D
+Node2D
+TileMap
+Camera2D
