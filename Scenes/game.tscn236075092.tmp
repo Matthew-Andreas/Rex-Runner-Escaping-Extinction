@@ -1239,7 +1239,7 @@ FisherNPC = NodePath("../NPCDialog")
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(0, -3)
 scale = Vector2(2, 2)
-offset = Vector2(0, -150)
+offset = Vector2(0, -250)
 position_smoothing_enabled = true
 
 [node name="TileMap2" type="TileMap" parent="."]
@@ -1259,7 +1259,6 @@ scale = Vector2(2, 2)
 shape = SubResource("WorldBoundaryShape2D_vo17d")
 
 [node name="NPCDialog" type="Label" parent="."]
-visible = false
 offset_left = 1181.5
 offset_top = -11.0
 offset_right = 1221.5

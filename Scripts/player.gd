@@ -5,7 +5,9 @@ const SPEED = 460.0
 const JUMP_VELOCITY = -700.0
 
 var gameScene = preload("res://Scenes/game.tscn")
-#var FisherNPC = gameScene.get_node("NPCDialog")
+@export var FisherNPC = Label
+
+
 
 var nextToBoatGuy = false
 
@@ -39,6 +41,7 @@ func _physics_process(delta):
 		animated_sprite_2d.play("idle")
 	else:
 		animated_sprite_2d.play("run")
+		#FisherNPC.visible = false
 	
 	
 	if direction:
@@ -50,7 +53,7 @@ func _physics_process(delta):
 	
 	if nextToBoatGuy and Input.is_action_just_pressed("interact"):
 		print("Sup Bro")
-		#FisherNPC.visible = false
+		FisherNPC.visible =true
 		
 
 	
