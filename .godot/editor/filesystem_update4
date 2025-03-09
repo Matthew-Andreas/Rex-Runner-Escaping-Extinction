@@ -1,9 +1,5 @@
 res://Scenes/game.tscn
-res://Scripts/player.gd
 res://Scenes/player.tscn
 res://Scenes/base_npc.tscn
-res://Scenes/base_npc_Iteraction.gd
-res://Scripts/base_npc_Iteraction.gd
 res://Scenes/instruction_object.tscn
-res://Scripts/MainLand.gd
 res://Scenes/dialog.tscn
