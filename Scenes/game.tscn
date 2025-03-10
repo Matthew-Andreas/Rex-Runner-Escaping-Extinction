@@ -1,6 +1,7 @@
-[gd_scene load_steps=29 format=3 uid="uid://b2d205cqye2y5"]
+[gd_scene load_steps=32 format=3 uid="uid://b2d205cqye2y5"]
 
 [ext_resource type="PackedScene" uid="uid://b2t1v58vdlfht" path="res://Scenes/player.tscn" id="1_p7qnk"]
+[ext_resource type="Script" uid="uid://cxaweorifhoet" path="res://Scripts/MainLand.gd" id="1_rku1e"]
 [ext_resource type="Texture2D" uid="uid://coir1dufuadd" path="res://Assest/sprites/world_tileset.png" id="2_calkk"]
 [ext_resource type="Texture2D" uid="uid://cra02p87vr0b8" path="res://Assest/sprites/midground_/spring_.png" id="3_wp5ga"]
 [ext_resource type="Texture2D" uid="uid://n003fa5lxgnp" path="res://Assest/sprites/midground_/summer_.png" id="4_hvj25"]
@@ -8,8 +9,9 @@
 [ext_resource type="Texture2D" uid="uid://b633q8msgdkw2" path="res://Assest/sprites/3 Objects/Water.png" id="6_5jks3"]
 [ext_resource type="Texture2D" uid="uid://dequ4l87s8vgh" path="res://Assest/sprites/DinoSprites - vita.png" id="7_487vo"]
 [ext_resource type="Texture2D" uid="uid://cwgq1i3537cyt" path="res://Assest/sprites/3 Objects/Boat.png" id="8_1wcmv"]
-[ext_resource type="Script" uid="uid://cqi2elxm554sl" path="res://Scenes/area_2d.gd" id="8_ldgsr"]
 [ext_resource type="FontFile" uid="uid://dwxqiucqib8po" path="res://Assest/fonts/PixelOperator8.ttf" id="9_h4fw4"]
+[ext_resource type="Script" uid="uid://dnur25np7t7t6" path="res://Scripts/base_npc_Iteraction.gd" id="10_ldgsr"]
+[ext_resource type="PackedScene" uid="uid://b35xp2ttecyr7" path="res://Scenes/instruction_object.tscn" id="11_o5yvi"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ghnoh"]
 texture = ExtResource("2_calkk")
@@ -1130,47 +1132,6 @@ sources/2 = SubResource("TileSetAtlasSource_3psos")
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_vo17d"]
 distance = 2.625
 
-[sub_resource type="GDScript" id="GDScript_h4fw4"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ldgsr"]
-size = Vector2(47.5, 27)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ql2bl"]
-atlas = ExtResource("7_487vo")
-region = Rect2(0, 0, 24, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_i6nqn"]
-atlas = ExtResource("7_487vo")
-region = Rect2(24, 0, 24, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_r3g6s"]
-atlas = ExtResource("7_487vo")
-region = Rect2(48, 0, 24, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_n81r8"]
-atlas = ExtResource("7_487vo")
-region = Rect2(72, 0, 24, 24)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_7i0vp"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ql2bl")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_i6nqn")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_r3g6s")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_n81r8")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_v158k"]
 
 [sub_resource type="Animation" id="Animation_h4fw4"]
@@ -1210,8 +1171,55 @@ _data = {
 &"RESET": SubResource("Animation_ldgsr")
 }
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_3sst3"]
+atlas = ExtResource("7_487vo")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n8v3c"]
+atlas = ExtResource("7_487vo")
+region = Rect2(24, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_duayq"]
+atlas = ExtResource("7_487vo")
+region = Rect2(48, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dq44t"]
+atlas = ExtResource("7_487vo")
+region = Rect2(72, 0, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6h7vh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3sst3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n8v3c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_duayq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dq44t")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rccsu"]
+size = Vector2(60, 30)
+
+[sub_resource type="Gradient" id="Gradient_irs7l"]
+colors = PackedColorArray(0.176471, 0.176471, 0.176471, 1, 0.176471, 0.176471, 0.176471, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_edf0l"]
+gradient = SubResource("Gradient_irs7l")
+width = 128
+
 [node name="Game" type="Node2D"]
 scale = Vector2(2, 2)
+script = ExtResource("1_rku1e")
 
 [node name="FishingHut" type="Sprite2D" parent="."]
 position = Vector2(1165.5, 55)
@@ -1230,11 +1238,11 @@ tile_set = SubResource("TileSet_i757a")
 format = 2
 layer_0/tile_data = PackedInt32Array(196608, 0, 0, 196609, 0, 0, 196610, 0, 0, 196614, 0, 0, 196615, 0, 0, 196616, 0, 0, 262143, 0, 0, 262141, 0, 0, 262140, 0, 0, 262139, 0, 0, 262138, 0, 0, 131080, 0, 7, 196603, 0, 5, 131067, 0, 4, 65531, 0, 4, -5, 0, 3, 196607, 65536, 3, 131079, 65536, 3)
 
-[node name="Player" parent="." node_paths=PackedStringArray("FisherNPC") instance=ExtResource("1_p7qnk")]
+[node name="Player" parent="." instance=ExtResource("1_p7qnk")]
 z_index = 5
 position = Vector2(21, 28)
 scale = Vector2(2, 2)
-FisherNPC = NodePath("../NPCDialog")
+money = 550
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(0, -3)
@@ -1258,30 +1266,6 @@ rotation = -1.5708
 scale = Vector2(2, 2)
 shape = SubResource("WorldBoundaryShape2D_vo17d")
 
-[node name="NPCDialog" type="Label" parent="."]
-visible = false
-offset_left = 1181.5
-offset_top = -11.0
-offset_right = 1221.5
-offset_bottom = 12.0
-theme_override_fonts/font = ExtResource("9_h4fw4")
-theme_override_font_sizes/font_size = 8
-text = "Hello"
-script = SubResource("GDScript_h4fw4")
-
-[node name="Area2D" type="Area2D" parent="."]
-position = Vector2(1194, 40)
-scale = Vector2(2, 2)
-script = ExtResource("8_ldgsr")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(-0.25, -3.5)
-shape = SubResource("RectangleShape2D_ldgsr")
-
-[node name="FishermanNPC" type="AnimatedSprite2D" parent="Area2D" groups=["FishermanNPC"]]
-sprite_frames = SubResource("SpriteFrames_7i0vp")
-autoplay = "default"
-
 [node name="AnimatableBody2D" type="AnimatableBody2D" parent="."]
 scale = Vector2(2, 2)
 physics_material_override = SubResource("PhysicsMaterial_v158k")
@@ -1296,5 +1280,91 @@ autoplay = "Boat bob"
 position = Vector2(617, 49)
 texture = ExtResource("8_1wcmv")
 
-[connection signal="body_entered" from="Area2D" to="Player" method="_on_area_2d_body_entered"]
-[connection signal="body_exited" from="Area2D" to="Player" method="_on_area_2d_body_exited"]
+[node name="Boat Seller" type="Node2D" parent="."]
+position = Vector2(1200, 40.5)
+script = ExtResource("10_ldgsr")
+Name = "Bob"
+profession = "Boat Seller"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Boat Seller"]
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_6h7vh")
+autoplay = "default"
+frame_progress = 0.80562
+
+[node name="InteractionArea" type="Area2D" parent="Boat Seller/AnimatedSprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Boat Seller/AnimatedSprite2D/InteractionArea"]
+position = Vector2(0, -5)
+shape = SubResource("RectangleShape2D_rccsu")
+
+[node name="InstructionObject" parent="Boat Seller" instance=ExtResource("11_o5yvi")]
+position = Vector2(-0.5, -26.5)
+
+[node name="Dialog" type="Node2D" parent="Boat Seller"]
+position = Vector2(-63.5, -84.5)
+
+[node name="Sprite2D" type="Sprite2D" parent="Boat Seller/Dialog"]
+position = Vector2(64, 32)
+texture = SubResource("GradientTexture2D_edf0l")
+
+[node name="DialogText" type="Label" parent="Boat Seller/Dialog/Sprite2D"]
+offset_left = -63.0
+offset_top = -27.0
+offset_right = 63.0
+offset_bottom = 20.0
+theme_override_fonts/font = ExtResource("9_h4fw4")
+theme_override_font_sizes/font_size = 8
+autowrap_mode = 2
+
+[node name="DialogButtons1" type="Control" parent="Boat Seller/Dialog"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Yes" type="Button" parent="Boat Seller/Dialog/DialogButtons1"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 43.0
+offset_right = 43.0
+offset_bottom = 59.0
+theme_override_fonts/font = ExtResource("9_h4fw4")
+theme_override_font_sizes/font_size = 8
+text = "Yes"
+
+[node name="No" type="Button" parent="Boat Seller/Dialog/DialogButtons1"]
+layout_mode = 0
+offset_left = 76.5
+offset_top = 43.0
+offset_right = 105.5
+offset_bottom = 59.0
+theme_override_fonts/font = ExtResource("9_h4fw4")
+theme_override_font_sizes/font_size = 8
+text = "No"
+
+[node name="DialogButtons2" type="Control" parent="Boat Seller"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -63.5
+offset_top = -84.5
+offset_right = -23.5
+offset_bottom = -44.5
+
+[node name="Ok" type="Button" parent="Boat Seller/DialogButtons2"]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 42.5
+offset_right = 75.0
+offset_bottom = 58.5
+theme_override_fonts/font = ExtResource("9_h4fw4")
+theme_override_font_sizes/font_size = 8
+text = "Ok"
+
+[connection signal="interactwithNPC" from="Player" to="." method="_on_player_interactwith_npc"]
+[connection signal="walkedUpToNPC" from="Player" to="." method="_on_player_walked_up_to_npc"]
+[connection signal="body_entered" from="Boat Seller/AnimatedSprite2D/InteractionArea" to="Player" method="_on_interaction_area_body_entered"]
+[connection signal="body_exited" from="Boat Seller/AnimatedSprite2D/InteractionArea" to="Player" method="_on_interaction_area_body_exited"]
+[connection signal="pressed" from="Boat Seller/Dialog/DialogButtons1/Yes" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Boat Seller/Dialog/DialogButtons1/No" to="." method="_on_no_pressed"]
+[connection signal="pressed" from="Boat Seller/DialogButtons2/Ok" to="." method="_on_ok_pressed"]

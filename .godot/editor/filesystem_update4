@@ -1,3 +1,5 @@
 res://Scenes/game.tscn
 res://Scenes/player.tscn
-res://Scripts/player.gd
+res://Scenes/base_npc.tscn
+res://Scenes/instruction_object.tscn
+res://Scenes/dialog.tscn
