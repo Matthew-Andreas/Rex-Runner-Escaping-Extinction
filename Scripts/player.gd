@@ -11,8 +11,8 @@ signal walkedUpToNPC(name:String)
 signal interactwithNPC(name:String)
 
 
-var playerName = "Matthew"
-var money = 20
+@export var playerName = "Matthew"
+@export var money = 20
 var nextToBoatGuy = false
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.

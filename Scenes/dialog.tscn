@@ -16,9 +16,9 @@ position = Vector2(64, 32)
 texture = SubResource("GradientTexture2D_edf0l")
 
 [node name="DialogText" type="Label" parent="Sprite2D"]
-offset_left = -63.0
-offset_top = -31.0
-offset_right = 63.0
+offset_left = -60.0
+offset_top = -27.0
+offset_right = 60.0
 offset_bottom = 20.0
 theme_override_fonts/font = ExtResource("1_irs7l")
 theme_override_font_sizes/font_size = 8

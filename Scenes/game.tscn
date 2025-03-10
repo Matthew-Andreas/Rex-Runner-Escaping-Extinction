@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://b2d205cqye2y5"]
+[gd_scene load_steps=32 format=3 uid="uid://b2d205cqye2y5"]
 
 [ext_resource type="PackedScene" uid="uid://b2t1v58vdlfht" path="res://Scenes/player.tscn" id="1_p7qnk"]
 [ext_resource type="Script" uid="uid://cxaweorifhoet" path="res://Scripts/MainLand.gd" id="1_rku1e"]
@@ -1132,45 +1132,6 @@ sources/2 = SubResource("TileSetAtlasSource_3psos")
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_vo17d"]
 distance = 2.625
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ldgsr"]
-size = Vector2(47.5, 27)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ql2bl"]
-atlas = ExtResource("7_487vo")
-region = Rect2(0, 0, 24, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_i6nqn"]
-atlas = ExtResource("7_487vo")
-region = Rect2(24, 0, 24, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_r3g6s"]
-atlas = ExtResource("7_487vo")
-region = Rect2(48, 0, 24, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_n81r8"]
-atlas = ExtResource("7_487vo")
-region = Rect2(72, 0, 24, 24)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_7i0vp"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ql2bl")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_i6nqn")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_r3g6s")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_n81r8")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_v158k"]
 
 [sub_resource type="Animation" id="Animation_h4fw4"]
@@ -1281,6 +1242,7 @@ layer_0/tile_data = PackedInt32Array(196608, 0, 0, 196609, 0, 0, 196610, 0, 0, 1
 z_index = 5
 position = Vector2(21, 28)
 scale = Vector2(2, 2)
+money = 550
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(0, -3)
@@ -1313,18 +1275,6 @@ offset_bottom = 12.0
 theme_override_fonts/font = ExtResource("9_h4fw4")
 theme_override_font_sizes/font_size = 8
 text = "Hello"
-
-[node name="Area2D" type="Area2D" parent="."]
-position = Vector2(1194, 200)
-scale = Vector2(2, 2)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(-0.25, -3.5)
-shape = SubResource("RectangleShape2D_ldgsr")
-
-[node name="FishermanNPC" type="AnimatedSprite2D" parent="Area2D" groups=["FishermanNPC"]]
-sprite_frames = SubResource("SpriteFrames_7i0vp")
-autoplay = "default"
 
 [node name="AnimatableBody2D" type="AnimatableBody2D" parent="."]
 scale = Vector2(2, 2)
@@ -1370,14 +1320,21 @@ texture = SubResource("GradientTexture2D_edf0l")
 
 [node name="DialogText" type="Label" parent="Boat Seller/Dialog/Sprite2D"]
 offset_left = -63.0
-offset_top = -31.0
+offset_top = -27.0
 offset_right = 63.0
 offset_bottom = 20.0
 theme_override_fonts/font = ExtResource("9_h4fw4")
 theme_override_font_sizes/font_size = 8
 autowrap_mode = 2
 
-[node name="Button" type="Button" parent="Boat Seller/Dialog"]
+[node name="DialogButtons1" type="Control" parent="Boat Seller/Dialog"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Yes" type="Button" parent="Boat Seller/Dialog/DialogButtons1"]
+layout_mode = 0
 offset_left = 14.0
 offset_top = 43.0
 offset_right = 43.0
@@ -1386,7 +1343,8 @@ theme_override_fonts/font = ExtResource("9_h4fw4")
 theme_override_font_sizes/font_size = 8
 text = "Yes"
 
-[node name="Button2" type="Button" parent="Boat Seller/Dialog"]
+[node name="No" type="Button" parent="Boat Seller/Dialog/DialogButtons1"]
+layout_mode = 0
 offset_left = 76.5
 offset_top = 43.0
 offset_right = 105.5
@@ -1395,9 +1353,28 @@ theme_override_fonts/font = ExtResource("9_h4fw4")
 theme_override_font_sizes/font_size = 8
 text = "No"
 
+[node name="DialogButtons2" type="Control" parent="Boat Seller"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -63.5
+offset_top = -84.5
+offset_right = -23.5
+offset_bottom = -44.5
+
+[node name="Ok" type="Button" parent="Boat Seller/DialogButtons2"]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 42.5
+offset_right = 75.0
+offset_bottom = 58.5
+theme_override_fonts/font = ExtResource("9_h4fw4")
+theme_override_font_sizes/font_size = 8
+text = "Ok"
+
 [connection signal="interactwithNPC" from="Player" to="." method="_on_player_interactwith_npc"]
 [connection signal="walkedUpToNPC" from="Player" to="." method="_on_player_walked_up_to_npc"]
-[connection signal="body_entered" from="Area2D" to="Player" method="_on_area_2d_body_entered"]
-[connection signal="body_exited" from="Area2D" to="Player" method="_on_area_2d_body_exited"]
 [connection signal="body_entered" from="Boat Seller/AnimatedSprite2D/InteractionArea" to="Player" method="_on_interaction_area_body_entered"]
 [connection signal="body_exited" from="Boat Seller/AnimatedSprite2D/InteractionArea" to="Player" method="_on_interaction_area_body_exited"]
+[connection signal="pressed" from="Boat Seller/Dialog/DialogButtons1/Yes" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Boat Seller/Dialog/DialogButtons1/No" to="." method="_on_no_pressed"]
+[connection signal="pressed" from="Boat Seller/DialogButtons2/Ok" to="." method="_on_ok_pressed"]
