@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://b2d205cqye2y5"]
+[gd_scene load_steps=33 format=3 uid="uid://b2d205cqye2y5"]
 
 [ext_resource type="PackedScene" uid="uid://b2t1v58vdlfht" path="res://Scenes/player.tscn" id="1_p7qnk"]
 [ext_resource type="Script" uid="uid://cxaweorifhoet" path="res://Scripts/MainLand.gd" id="1_rku1e"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://n003fa5lxgnp" path="res://Assest/sprites/midground_/summer_.png" id="4_hvj25"]
 [ext_resource type="Texture2D" uid="uid://w85ddgnjghi2" path="res://Assest/sprites/3 Objects/Fishing_hut.png" id="5_a0qrf"]
 [ext_resource type="Texture2D" uid="uid://b633q8msgdkw2" path="res://Assest/sprites/3 Objects/Water.png" id="6_5jks3"]
+[ext_resource type="Script" uid="uid://bysgbrkuparg5" path="res://Scenes/label.gd" id="6_rfjv2"]
 [ext_resource type="Texture2D" uid="uid://dequ4l87s8vgh" path="res://Assest/sprites/DinoSprites - vita.png" id="7_487vo"]
 [ext_resource type="Texture2D" uid="uid://cwgq1i3537cyt" path="res://Assest/sprites/3 Objects/Boat.png" id="8_1wcmv"]
 [ext_resource type="FontFile" uid="uid://dwxqiucqib8po" path="res://Assest/fonts/PixelOperator8.ttf" id="9_h4fw4"]
@@ -1248,7 +1249,20 @@ money = 550
 position = Vector2(0, -3)
 scale = Vector2(2, 2)
 offset = Vector2(0, -150)
+process_callback = 0
 position_smoothing_enabled = true
+
+[node name="UINode" type="CanvasLayer" parent="Player"]
+
+[node name="Label" type="Label" parent="Player/UINode"]
+visibility_layer = 3
+offset_left = 3.0
+offset_top = 4.0
+offset_right = 519.0
+offset_bottom = 105.0
+theme_override_fonts/font = ExtResource("9_h4fw4")
+theme_override_font_sizes/font_size = 16
+script = ExtResource("6_rfjv2")
 
 [node name="TileMap2" type="TileMap" parent="."]
 position = Vector2(-1, 1)

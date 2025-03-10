@@ -1,9 +1,9 @@
+Node2D
+Label
+CanvasLayer
 Control
 Button
 Sprite2D
-Label
-Node2D
-CanvasLayer
 Node
 CollisionShape2D
 Area2D
@@ -12,4 +12,3 @@ AnimationPlayer
 StaticBody2D
 AnimatableBody2D
 RichTextLabel
-TextEdit
