@@ -56,7 +56,6 @@ func _physics_process(delta):
 	move_and_slide()
 	
 	if nextToBoatGuy and Input.is_action_just_pressed("interact"):
-		print("Sup Bro")
 		interactwithNPC.emit("Boat Seller")
 		
 

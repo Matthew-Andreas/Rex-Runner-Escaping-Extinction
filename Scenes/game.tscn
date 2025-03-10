@@ -1266,16 +1266,6 @@ rotation = -1.5708
 scale = Vector2(2, 2)
 shape = SubResource("WorldBoundaryShape2D_vo17d")
 
-[node name="NPCDialog" type="Label" parent="."]
-visible = false
-offset_left = 1181.5
-offset_top = -11.0
-offset_right = 1221.5
-offset_bottom = 12.0
-theme_override_fonts/font = ExtResource("9_h4fw4")
-theme_override_font_sizes/font_size = 8
-text = "Hello"
-
 [node name="AnimatableBody2D" type="AnimatableBody2D" parent="."]
 scale = Vector2(2, 2)
 physics_material_override = SubResource("PhysicsMaterial_v158k")
