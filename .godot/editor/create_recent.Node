@@ -1,9 +1,9 @@
+Button
+Sprite2D
 Node2D
 Label
 CanvasLayer
 Control
-Button
-Sprite2D
 Node
 CollisionShape2D
 Area2D

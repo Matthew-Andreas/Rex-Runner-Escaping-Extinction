@@ -1,7 +1,0 @@
-res://Scenes/game.tscn
-res://Scenes/player.tscn
-res://Scenes/base_npc.tscn
-res://Scenes/instruction_object.tscn
-res://Scenes/dialog.tscn
-res://Scenes/ui_node.tscn
-res://Scenes/label.gd
