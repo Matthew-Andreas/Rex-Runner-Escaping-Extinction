@@ -1,14 +1,14 @@
 extends Node2D
 
-
+signal actionSelected(action: String)
 
 func _on_quest_pressed() -> void:
-	pass # Replace with function body.
+	actionSelected.emit("quest")
 
 
 func _on_talk_pressed() -> void:
-	pass # Replace with function body.
+	actionSelected.emit("talk")
 
 
 func _on_cancel_pressed() -> void:
-	pass # Replace with function body.
+	actionSelected.emit("cancel")

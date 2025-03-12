@@ -1313,17 +1313,19 @@ frame_progress = 0.80562
 position = Vector2(0, -5)
 shape = SubResource("RectangleShape2D_rccsu")
 
-[node name="InstructionObject" parent="Boat Seller" instance=ExtResource("11_o5yvi")]
+[node name="DialogBlock" type="Node2D" parent="Boat Seller"]
+
+[node name="InstructionObject" parent="Boat Seller/DialogBlock" instance=ExtResource("11_o5yvi")]
 position = Vector2(-0.5, -26.5)
 
-[node name="Dialog" type="Node2D" parent="Boat Seller"]
+[node name="Dialog" type="Node2D" parent="Boat Seller/DialogBlock"]
 position = Vector2(-63.5, -84.5)
 
-[node name="Sprite2D" type="Sprite2D" parent="Boat Seller/Dialog"]
+[node name="Sprite2D" type="Sprite2D" parent="Boat Seller/DialogBlock/Dialog"]
 position = Vector2(64, 32)
 texture = SubResource("GradientTexture2D_edf0l")
 
-[node name="DialogText" type="Label" parent="Boat Seller/Dialog/Sprite2D"]
+[node name="DialogText" type="Label" parent="Boat Seller/DialogBlock/Dialog/Sprite2D"]
 offset_left = -63.0
 offset_top = -27.0
 offset_right = 63.0
@@ -1333,14 +1335,16 @@ theme_override_font_sizes/font_size = 8
 autowrap_mode = 2
 metadata/_edit_use_anchors_ = true
 
-[node name="DialogButtons1" type="Control" parent="Boat Seller/Dialog"]
+[node name="DialogButtons1" type="Control" parent="Boat Seller/DialogBlock"]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = -63.5
+offset_top = -84.5
+offset_right = -23.5
+offset_bottom = -44.5
 metadata/_edit_use_anchors_ = true
 
-[node name="Yes" type="Button" parent="Boat Seller/Dialog/DialogButtons1"]
+[node name="Yes" type="Button" parent="Boat Seller/DialogBlock/DialogButtons1"]
 layout_mode = 0
 offset_left = 14.0
 offset_top = 43.0
@@ -1351,7 +1355,7 @@ theme_override_font_sizes/font_size = 8
 text = "Yes"
 metadata/_edit_use_anchors_ = true
 
-[node name="No" type="Button" parent="Boat Seller/Dialog/DialogButtons1"]
+[node name="No" type="Button" parent="Boat Seller/DialogBlock/DialogButtons1"]
 layout_mode = 0
 offset_left = 76.5
 offset_top = 43.0
@@ -1362,7 +1366,7 @@ theme_override_font_sizes/font_size = 8
 text = "No"
 metadata/_edit_use_anchors_ = true
 
-[node name="DialogButtons2" type="Control" parent="Boat Seller"]
+[node name="DialogButtons2" type="Control" parent="Boat Seller/DialogBlock"]
 layout_mode = 3
 anchors_preset = 0
 offset_left = -63.5
@@ -1371,7 +1375,7 @@ offset_right = -23.5
 offset_bottom = -44.5
 metadata/_edit_use_anchors_ = true
 
-[node name="Ok" type="Button" parent="Boat Seller/DialogButtons2"]
+[node name="Ok" type="Button" parent="Boat Seller/DialogBlock/DialogButtons2"]
 layout_mode = 0
 offset_left = 46.0
 offset_top = 42.5
@@ -1381,16 +1385,18 @@ theme_override_fonts/font = ExtResource("9_h4fw4")
 theme_override_font_sizes/font_size = 8
 text = "Ok"
 
-[node name="DialogSelectMenu" parent="Boat Seller" instance=ExtResource("14_1phco")]
+[node name="DialogSelectMenu" parent="Boat Seller/DialogBlock" instance=ExtResource("14_1phco")]
 position = Vector2(-25, -108.5)
 scale = Vector2(0.5, 0.5)
 
+[connection signal="talkingWithBoatGuy" from="." to="Boat Seller" method="_on_game_talking_with_boat_guy"]
 [connection signal="interactwithNPC" from="Player" to="." method="_on_player_interactwith_npc"]
 [connection signal="walkedUpToNPC" from="Player" to="." method="_on_player_walked_up_to_npc"]
 [connection signal="body_entered" from="Boat Seller/AnimatedSprite2D/InteractionArea" to="Player" method="_on_interaction_area_body_entered"]
 [connection signal="body_entered" from="Boat Seller/AnimatedSprite2D/InteractionArea" to="Boat Seller" method="_on_interaction_area_body_entered"]
 [connection signal="body_exited" from="Boat Seller/AnimatedSprite2D/InteractionArea" to="Player" method="_on_interaction_area_body_exited"]
 [connection signal="body_exited" from="Boat Seller/AnimatedSprite2D/InteractionArea" to="Boat Seller" method="_on_interaction_area_body_exited"]
-[connection signal="pressed" from="Boat Seller/Dialog/DialogButtons1/Yes" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Boat Seller/Dialog/DialogButtons1/No" to="." method="_on_no_pressed"]
-[connection signal="pressed" from="Boat Seller/DialogButtons2/Ok" to="." method="_on_ok_pressed"]
+[connection signal="pressed" from="Boat Seller/DialogBlock/DialogButtons1/Yes" to="Boat Seller" method="_on_yes_pressed"]
+[connection signal="pressed" from="Boat Seller/DialogBlock/DialogButtons1/No" to="Boat Seller" method="_on_no_pressed"]
+[connection signal="pressed" from="Boat Seller/DialogBlock/DialogButtons2/Ok" to="Boat Seller" method="_on_ok_pressed"]
+[connection signal="actionSelected" from="Boat Seller/DialogBlock/DialogSelectMenu" to="Boat Seller" method="_on_dialog_select_menu_action_selected"]

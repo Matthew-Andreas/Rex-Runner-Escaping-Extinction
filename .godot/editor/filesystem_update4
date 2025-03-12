@@ -1,13 +1,9 @@
-res://dialog_select_menu.gd
-res://dialog_select_menu.tscn
-res://Scenes/dialog_select_menu.tscn
 res://Scenes/game.tscn
-res://Scripts/MainLand.gd
+res://Scripts/BoatSeller.gd
 res://Scenes/player.tscn
 res://Scenes/base_npc.tscn
 res://Scenes/instruction_object.tscn
 res://Scenes/dialog.tscn
 res://Scenes/ui_node.tscn
-res://Scripts/base_npc_Iteraction.gd
-res://Scripts/BoatSeller.gd
-res://Scripts/player.gd
+res://Scenes/dialog_select_menu.tscn
+res://Scripts/MainLand.gd
