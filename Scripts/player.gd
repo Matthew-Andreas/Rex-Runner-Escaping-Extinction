@@ -4,10 +4,6 @@ extends CharacterBody2D
 const SPEED = 460.0
 const JUMP_VELOCITY = -700.0
 
-#var gameScene = preload("res://Scenes/game.tscn")
-#@export var FisherNPC = Label
-
-signal walkedUpToNPC(name:String)
 signal interactwithNPC(name:String)
 
 
@@ -58,12 +54,3 @@ func _physics_process(delta):
 	if nextToBoatGuy and Input.is_action_just_pressed("interact"):
 		interactwithNPC.emit("Boat Seller")
 		
-
-#func _on_interaction_area_body_entered(body: Node2D) -> void:
-	#nextToBoatGuy = true
-	#walkedUpToNPC.emit("Boat Seller")
-
-
-#func _on_interaction_area_body_exited(body: Node2D) -> void:
-	#nextToBoatGuy = false
-	#walkedUpToNPC.emit("Boat Seller")

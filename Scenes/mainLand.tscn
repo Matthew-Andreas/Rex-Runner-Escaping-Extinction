@@ -1,22 +1,21 @@
-[gd_scene load_steps=34 format=3 uid="uid://b2d205cqye2y5"]
+[gd_scene load_steps=33 format=3 uid="uid://b2d205cqye2y5"]
 
-[ext_resource type="PackedScene" uid="uid://b2t1v58vdlfht" path="res://Scenes/player.tscn" id="1_p7qnk"]
-[ext_resource type="Script" uid="uid://cxaweorifhoet" path="res://Scripts/MainLand.gd" id="1_rku1e"]
-[ext_resource type="Texture2D" uid="uid://coir1dufuadd" path="res://Assest/sprites/world_tileset.png" id="2_calkk"]
-[ext_resource type="Texture2D" uid="uid://cra02p87vr0b8" path="res://Assest/sprites/midground_/spring_.png" id="3_wp5ga"]
-[ext_resource type="Texture2D" uid="uid://n003fa5lxgnp" path="res://Assest/sprites/midground_/summer_.png" id="4_hvj25"]
-[ext_resource type="Texture2D" uid="uid://w85ddgnjghi2" path="res://Assest/sprites/3 Objects/Fishing_hut.png" id="5_a0qrf"]
-[ext_resource type="Texture2D" uid="uid://b633q8msgdkw2" path="res://Assest/sprites/3 Objects/Water.png" id="6_5jks3"]
-[ext_resource type="Script" uid="uid://bysgbrkuparg5" path="res://Scripts/CoinsUI.gd" id="6_rfjv2"]
-[ext_resource type="Texture2D" uid="uid://dequ4l87s8vgh" path="res://Assest/sprites/DinoSprites - vita.png" id="7_487vo"]
-[ext_resource type="Texture2D" uid="uid://cwgq1i3537cyt" path="res://Assest/sprites/3 Objects/Boat.png" id="8_1wcmv"]
-[ext_resource type="FontFile" uid="uid://dwxqiucqib8po" path="res://Assest/fonts/PixelOperator8.ttf" id="9_h4fw4"]
-[ext_resource type="Script" uid="uid://dnur25np7t7t6" path="res://Scripts/BoatSeller.gd" id="10_ldgsr"]
-[ext_resource type="PackedScene" uid="uid://b35xp2ttecyr7" path="res://Scenes/instruction_object.tscn" id="11_o5yvi"]
-[ext_resource type="PackedScene" uid="uid://bilvcqsbloc1l" path="res://Scenes/dialog_select_menu.tscn" id="14_1phco"]
+[ext_resource type="Script" uid="uid://cxaweorifhoet" path="res://Scripts/MainLand.gd" id="1_x7bt0"]
+[ext_resource type="Texture2D" uid="uid://w85ddgnjghi2" path="res://Assest/sprites/3 Objects/Fishing_hut.png" id="2_yiqtn"]
+[ext_resource type="Texture2D" uid="uid://coir1dufuadd" path="res://Assest/sprites/world_tileset.png" id="3_gqfpk"]
+[ext_resource type="PackedScene" uid="uid://b2t1v58vdlfht" path="res://Scenes/player.tscn" id="4_t7vw6"]
+[ext_resource type="FontFile" uid="uid://dwxqiucqib8po" path="res://Assest/fonts/PixelOperator8.ttf" id="5_nep7u"]
+[ext_resource type="Texture2D" uid="uid://cra02p87vr0b8" path="res://Assest/sprites/midground_/spring_.png" id="7_a4pux"]
+[ext_resource type="Texture2D" uid="uid://n003fa5lxgnp" path="res://Assest/sprites/midground_/summer_.png" id="8_ttbho"]
+[ext_resource type="Texture2D" uid="uid://b633q8msgdkw2" path="res://Assest/sprites/3 Objects/Water.png" id="9_a6kvg"]
+[ext_resource type="Texture2D" uid="uid://cwgq1i3537cyt" path="res://Assest/sprites/3 Objects/Boat.png" id="10_seosg"]
+[ext_resource type="Script" uid="uid://dnur25np7t7t6" path="res://Scripts/BoatSeller.gd" id="11_tguuv"]
+[ext_resource type="Texture2D" uid="uid://dequ4l87s8vgh" path="res://Assest/sprites/DinoSprites - vita.png" id="12_js3w7"]
+[ext_resource type="PackedScene" uid="uid://b35xp2ttecyr7" path="res://Scenes/instruction_object.tscn" id="13_tfyrk"]
+[ext_resource type="PackedScene" uid="uid://bilvcqsbloc1l" path="res://Scenes/dialog_select_menu.tscn" id="14_occqk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ghnoh"]
-texture = ExtResource("2_calkk")
+texture = ExtResource("3_gqfpk")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
@@ -182,7 +181,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_ghnoh")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2yk6b"]
-texture = ExtResource("3_wp5ga")
+texture = ExtResource("7_a4pux")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -0.875, 8, -1, 8, 8, -8, 8)
 1:0/0 = 0
@@ -571,7 +570,7 @@ texture = ExtResource("3_wp5ga")
 0:4/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ox2id"]
-texture = ExtResource("4_hvj25")
+texture = ExtResource("8_ttbho")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
@@ -1093,7 +1092,7 @@ texture = ExtResource("4_hvj25")
 11:19/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3psos"]
-texture = ExtResource("6_5jks3")
+texture = ExtResource("9_a6kvg")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1174,19 +1173,19 @@ _data = {
 }
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3sst3"]
-atlas = ExtResource("7_487vo")
+atlas = ExtResource("12_js3w7")
 region = Rect2(0, 0, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_n8v3c"]
-atlas = ExtResource("7_487vo")
+atlas = ExtResource("12_js3w7")
 region = Rect2(24, 0, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_duayq"]
-atlas = ExtResource("7_487vo")
+atlas = ExtResource("12_js3w7")
 region = Rect2(48, 0, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dq44t"]
-atlas = ExtResource("7_487vo")
+atlas = ExtResource("12_js3w7")
 region = Rect2(72, 0, 24, 24)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_6h7vh"]
@@ -1221,12 +1220,12 @@ width = 128
 
 [node name="Game" type="Node2D"]
 scale = Vector2(2, 2)
-script = ExtResource("1_rku1e")
+script = ExtResource("1_x7bt0")
 
 [node name="FishingHut" type="Sprite2D" parent="."]
 position = Vector2(1165.5, 55)
 scale = Vector2(2, 2)
-texture = ExtResource("5_a0qrf")
+texture = ExtResource("2_yiqtn")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="FishingHut"]
 scale = Vector2(2, 2)
@@ -1240,7 +1239,7 @@ tile_set = SubResource("TileSet_i757a")
 format = 2
 layer_0/tile_data = PackedInt32Array(196608, 0, 0, 196609, 0, 0, 196610, 0, 0, 196614, 0, 0, 196615, 0, 0, 196616, 0, 0, 262143, 0, 0, 262141, 0, 0, 262140, 0, 0, 262139, 0, 0, 262138, 0, 0, 131080, 0, 7, 196603, 0, 5, 131067, 0, 4, 65531, 0, 4, -5, 0, 3, 196607, 65536, 3, 131079, 65536, 3)
 
-[node name="Player" parent="." instance=ExtResource("1_p7qnk")]
+[node name="Player" parent="." instance=ExtResource("4_t7vw6")]
 z_index = 5
 position = Vector2(21, 28)
 scale = Vector2(2, 2)
@@ -1252,18 +1251,6 @@ scale = Vector2(2, 2)
 offset = Vector2(0, -150)
 process_callback = 0
 position_smoothing_enabled = true
-
-[node name="UINode" type="CanvasLayer" parent="Player"]
-
-[node name="Label" type="Label" parent="Player/UINode"]
-visibility_layer = 3
-offset_left = 3.0
-offset_top = 4.0
-offset_right = 519.0
-offset_bottom = 105.0
-theme_override_fonts/font = ExtResource("9_h4fw4")
-theme_override_font_sizes/font_size = 16
-script = ExtResource("6_rfjv2")
 
 [node name="TileMap2" type="TileMap" parent="."]
 position = Vector2(-1, 1)
@@ -1293,11 +1280,11 @@ autoplay = "Boat bob"
 
 [node name="Boat" type="Sprite2D" parent="AnimatableBody2D"]
 position = Vector2(617, 49)
-texture = ExtResource("8_1wcmv")
+texture = ExtResource("10_seosg")
 
 [node name="Boat Seller" type="Node2D" parent="."]
 position = Vector2(1200, 40.5)
-script = ExtResource("10_ldgsr")
+script = ExtResource("11_tguuv")
 Name = "Bob"
 profession = "Boat Seller"
 
@@ -1315,7 +1302,7 @@ shape = SubResource("RectangleShape2D_rccsu")
 
 [node name="DialogBlock" type="Node2D" parent="Boat Seller"]
 
-[node name="InstructionObject" parent="Boat Seller/DialogBlock" instance=ExtResource("11_o5yvi")]
+[node name="InstructionObject" parent="Boat Seller/DialogBlock" instance=ExtResource("13_tfyrk")]
 position = Vector2(-0.5, -26.5)
 
 [node name="Dialog" type="Node2D" parent="Boat Seller/DialogBlock"]
@@ -1330,7 +1317,7 @@ offset_left = -63.0
 offset_top = -27.0
 offset_right = 63.0
 offset_bottom = 20.0
-theme_override_fonts/font = ExtResource("9_h4fw4")
+theme_override_fonts/font = ExtResource("5_nep7u")
 theme_override_font_sizes/font_size = 8
 autowrap_mode = 2
 metadata/_edit_use_anchors_ = true
@@ -1350,7 +1337,7 @@ offset_left = 14.0
 offset_top = 43.0
 offset_right = 43.0
 offset_bottom = 59.0
-theme_override_fonts/font = ExtResource("9_h4fw4")
+theme_override_fonts/font = ExtResource("5_nep7u")
 theme_override_font_sizes/font_size = 8
 text = "Yes"
 metadata/_edit_use_anchors_ = true
@@ -1361,7 +1348,7 @@ offset_left = 76.5
 offset_top = 43.0
 offset_right = 105.5
 offset_bottom = 59.0
-theme_override_fonts/font = ExtResource("9_h4fw4")
+theme_override_fonts/font = ExtResource("5_nep7u")
 theme_override_font_sizes/font_size = 8
 text = "No"
 metadata/_edit_use_anchors_ = true
@@ -1381,17 +1368,16 @@ offset_left = 46.0
 offset_top = 42.5
 offset_right = 75.0
 offset_bottom = 58.5
-theme_override_fonts/font = ExtResource("9_h4fw4")
+theme_override_fonts/font = ExtResource("5_nep7u")
 theme_override_font_sizes/font_size = 8
 text = "Ok"
 
-[node name="DialogSelectMenu" parent="Boat Seller/DialogBlock" instance=ExtResource("14_1phco")]
+[node name="DialogSelectMenu" parent="Boat Seller/DialogBlock" instance=ExtResource("14_occqk")]
 position = Vector2(-25, -108.5)
 scale = Vector2(0.5, 0.5)
 
 [connection signal="talkingWithBoatGuy" from="." to="Boat Seller" method="_on_game_talking_with_boat_guy"]
 [connection signal="interactwithNPC" from="Player" to="." method="_on_player_interactwith_npc"]
-[connection signal="walkedUpToNPC" from="Player" to="." method="_on_player_walked_up_to_npc"]
 [connection signal="body_entered" from="Boat Seller/AnimatedSprite2D/InteractionArea" to="Player" method="_on_interaction_area_body_entered"]
 [connection signal="body_entered" from="Boat Seller/AnimatedSprite2D/InteractionArea" to="Boat Seller" method="_on_interaction_area_body_entered"]
 [connection signal="body_exited" from="Boat Seller/AnimatedSprite2D/InteractionArea" to="Player" method="_on_interaction_area_body_exited"]
