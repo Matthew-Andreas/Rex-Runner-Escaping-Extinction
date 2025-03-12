@@ -11,13 +11,14 @@ func _ready() -> void:
 	changeVisibility(boatSeller.instructionText,false)
 	changeVisibility($"Boat Seller/Dialog",false)
 	changeVisibility($"Boat Seller/DialogButtons2",false)
+	changeVisibility($"Boat Seller/DialogSelectMenu",false)
 
-func _on_player_walked_up_to_npc(name: String) -> void:
-	if name == boatSeller.name:
-		changeVisibility(boatSeller.instructionText, state)
-		if not state:
-			changeVisibility($"Boat Seller/Dialog",false)
-		state = not state
+#func _on_player_walked_up_to_npc(name: String) -> void:
+	#if name == boatSeller.name:
+		#changeVisibility(boatSeller.instructionText, state)
+		#if not state:
+			#changeVisibility($"Boat Seller/Dialog",false)
+		#state = not state
 
 
 

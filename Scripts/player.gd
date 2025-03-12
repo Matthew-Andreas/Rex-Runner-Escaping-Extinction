@@ -59,11 +59,11 @@ func _physics_process(delta):
 		interactwithNPC.emit("Boat Seller")
 		
 
-func _on_interaction_area_body_entered(body: Node2D) -> void:
-	nextToBoatGuy = true
-	walkedUpToNPC.emit("Boat Seller")
+#func _on_interaction_area_body_entered(body: Node2D) -> void:
+	#nextToBoatGuy = true
+	#walkedUpToNPC.emit("Boat Seller")
 
 
-func _on_interaction_area_body_exited(body: Node2D) -> void:
-	nextToBoatGuy = false
-	walkedUpToNPC.emit("Boat Seller")
+#func _on_interaction_area_body_exited(body: Node2D) -> void:
+	#nextToBoatGuy = false
+	#walkedUpToNPC.emit("Boat Seller")

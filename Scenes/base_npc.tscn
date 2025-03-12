@@ -1,6 +1,5 @@
-[gd_scene load_steps=9 format=3 uid="uid://bkt8oxvx7dvxl"]
+[gd_scene load_steps=8 format=3 uid="uid://bkt8oxvx7dvxl"]
 
-[ext_resource type="Script" uid="uid://dnur25np7t7t6" path="res://Scripts/base_npc_Iteraction.gd" id="1_n8v3c"]
 [ext_resource type="Texture2D" uid="uid://dequ4l87s8vgh" path="res://Assest/sprites/DinoSprites - vita.png" id="1_rccsu"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3sst3"]
@@ -43,7 +42,6 @@ animations = [{
 size = Vector2(60, 30)
 
 [node name="Base NPC" type="Node2D"]
-script = ExtResource("1_n8v3c")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(2, 2)
